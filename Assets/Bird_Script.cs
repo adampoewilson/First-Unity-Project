@@ -20,7 +20,8 @@ public class Bird_Script : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    // Update is called once per frame, on
+    // EVERY. SINGLE. FRAME.
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) == true)
