@@ -5,6 +5,12 @@ using UnityEngine;
 public class PipeSpawn : MonoBehaviour
 {
     public GameObject pipe;
+
+    // 2 seconds between each pipe spawn
+    public float spawnRate = 2;
+
+    public float timer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
