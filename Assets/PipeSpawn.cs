@@ -23,15 +23,19 @@ public class PipeSpawn : MonoBehaviour
     {
 
         // make pipes spawn every 2 seconds
-            if (timer < spawnRate)
-            {
-                timer += Time.deltaTime;
-            }
-           
+        if (timer < spawnRate)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
 
-        // make pipes spawn
+            Instantiate(pipe, transform.position, transform.rotation);
 
-        Instantiate(pipe, transform.position, transform.rotation);
+            timer = 0;
+        }
+
+        
         
     }
 }
