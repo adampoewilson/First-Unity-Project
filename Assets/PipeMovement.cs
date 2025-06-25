@@ -15,7 +15,8 @@ public class PipeMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        transform.position = transform.position + (Vector3.left * moveSpeed);
+    { // Time.deltaTime means movement happens at same speed
+      // No matter frame rate
+        transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
     }
 }
