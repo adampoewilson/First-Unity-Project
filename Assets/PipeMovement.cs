@@ -7,7 +7,7 @@ public class PipeMovement : MonoBehaviour
 
     public float moveSpeed = 2;
 
-    public float deadZone = -45;
+    public float deadZone = -5;
 
     // Start is called before the first frame update
   void Start()
