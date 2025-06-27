@@ -25,7 +25,7 @@ public class PipeSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         // make pipes spawn every 2 seconds
         if (timer < spawnRate)
         {
@@ -44,8 +44,10 @@ public class PipeSpawn : MonoBehaviour
 
     void spawnPipe()
     {
+        float lowestPoint = transform.position.y - heightOffset;
+        float highestPoint = transform.position.y + heightOffset;
         
-        
+        Instantiate(pipe, transform.position, transform.rotation);
         
     }
 }
