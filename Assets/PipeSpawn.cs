@@ -14,7 +14,7 @@ public class PipeSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+
 
     }
 
@@ -29,13 +29,20 @@ public class PipeSpawn : MonoBehaviour
         }
         else
         {
+            // spawn a pipe
+            spawnPipe();
 
-            Instantiate(pipe, transform.position, transform.rotation);
-
+            // reset the timer
             timer = 0;
         }
 
-        
-        
+    }
+
+    void spawnPipe()
+    {
+
+        Instantiate(pipe, transform.position, transform.rotation);
+
     }
 }
+
