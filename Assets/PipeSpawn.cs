@@ -14,7 +14,8 @@ public class PipeSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        // spawn a pipe immediately
+        spawnPipe();
 
     }
 
