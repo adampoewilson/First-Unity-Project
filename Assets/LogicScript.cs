@@ -10,6 +10,8 @@ public class LogicScript : MonoBehaviour
 
     public Text scoreText;
 
+
+    [ContextMenu("Increase Score")]
     public void addScore()
     {
 
